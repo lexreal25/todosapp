@@ -1,0 +1,14 @@
+{% extends 'base/main.html' %}
+{% block content %}
+<div class="header-bar">
+      <a href="{% url 'tasks'%}">Go Back</a>
+</div>
+
+<div class="task">
+      <p style="font-size:20px; font-weight: bold;">Task : {{object.title}}</p>
+      <p>Description: {{object.description}}</p>
+      <p>Completed: {{object.complete}}</p>
+
+</div>
+
+{% endblock content %}
